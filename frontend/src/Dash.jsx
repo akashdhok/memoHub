@@ -30,6 +30,8 @@ const Dash = () => {
           <Nav>
             <Nav.Link as={Link} to="create" className="text-white" style={{fontSize : "20px", fontWeight : "600"}}>CreateNotes</Nav.Link>
             <Nav.Link  as={Link} to="mynotes" className="text-white" style={{fontSize : "20px", fontWeight : "600"}}>MyNotes</Nav.Link>
+            <Nav.Link  as={Link} to="uploadimages" className="text-white" style={{fontSize : "20px", fontWeight : "600"}}>UploadImages</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex align-items-center">

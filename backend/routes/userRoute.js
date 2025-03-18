@@ -5,5 +5,4 @@ route.post("/signup" , userController.signUp )
 route.post("/login" , userController.Login )
 route.get("/shownote" , userController.showData)
 
-
 module.exports = route

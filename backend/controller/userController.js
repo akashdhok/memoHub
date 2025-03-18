@@ -1,6 +1,7 @@
 const userModel = require("../model/userModel")
 const bcrypt = require("bcrypt")
 const noteModel = require("../model/noteModel")
+const imgmodel = require("../model/imgModel")
 const signUp = async(req ,res)=>{
    try {
     let{name , email , password} = req.body;
@@ -38,15 +39,17 @@ try {
 }
 }
 const showData = async(req , res)=>{
-   console.log(req.query)
    const{userid} = req.query
   let data = await noteModel.find({userid : userid})
-  res.status(200).send(data)
+  let image = await imgmodel.find({userid : userid})
+  
+  res.status(200).send({ notes: data, images: image });
 }
 
 
 module.exports = {
     signUp,
     Login,
-    showData
+    showData,
+   
 }

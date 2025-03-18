@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Dash from "./Dash";
 import CreateNotes from "./pages/CreateNotes";
 import MyNotes from "./pages/MyNotes";
+import UploadImage from "./pages/UploadImage";
 const App = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const App = () => {
           <Route index element={<CreateNotes />} />
           <Route path="create" element={<CreateNotes />} />
           <Route path="mynotes" element={<MyNotes />} />
+          <Route path="uploadimages" element = {<UploadImage/>}/>
         </Route>
       </Routes>
     </>

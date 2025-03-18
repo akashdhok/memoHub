@@ -15,8 +15,13 @@ const createNote = async(req , res)=>{
         res.status(400).send(error)
     }
 }
+const editData = async(req  ,res)=>{
+    console.log(req.query)
+    res.send("okk")
+}
 
 
 module.exports = {
-    createNote 
+    createNote,
+    editData 
 }
